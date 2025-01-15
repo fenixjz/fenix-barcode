@@ -1,4 +1,4 @@
-package com.fenix.fenix_barcode;
+package com.cf.fenix_barcode;
 
 import com.google.zxing.BarcodeFormat;
 import lombok.RequiredArgsConstructor;

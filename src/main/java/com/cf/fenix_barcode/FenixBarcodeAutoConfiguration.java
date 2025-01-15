@@ -1,4 +1,4 @@
-package com.fenix.fenix_barcode;
+package com.cf.fenix_barcode;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

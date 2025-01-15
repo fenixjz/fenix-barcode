@@ -77,7 +77,7 @@ The library exposes the `FenixBarcodeService` class, which provides public metho
 ### 1. Generating a Barcode Image File
 
 ```java
-import com.fenix.fenix_barcode.FenixBarcodeService;
+import com.cf.fenix_barcode.FenixBarcodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -89,10 +89,10 @@ public class BarcodeExample {
 
     public void generateBarcodeImage() {
         barcodeService.barcodeImg128(
-            "ABC123456789",      // Text to encode
-            "barcode128",        // Base name for the file
-            300,                  // Width of the barcode image
-            150                   // Height of the barcode image
+                "ABC123456789",      // Text to encode
+                "barcode128",        // Base name for the file
+                300,                  // Width of the barcode image
+                150                   // Height of the barcode image
         );
     }
 }
@@ -103,7 +103,7 @@ This will generate a barcode in the directory specified by the `fenix.spring.bar
 ### 2. Generating a Barcode as a Byte Array
 
 ```java
-import com.fenix.fenix_barcode.FenixBarcodeService;
+import com.cf.fenix_barcode.FenixBarcodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -115,9 +115,9 @@ public class BarcodeExample {
 
     public void generateBarcodeBytes() {
         byte[] barcodeBytes = barcodeService.barcodeBytesQRCode(
-            "https://example.com", // Text to encode
-            300,                    // Width of the barcode image
-            300                     // Height of the barcode image
+                "https://example.com", // Text to encode
+                300,                    // Width of the barcode image
+                300                     // Height of the barcode image
         );
         // Use barcodeBytes (e.g., send as a response in a web application)
     }
