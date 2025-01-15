@@ -87,7 +87,7 @@ public class BarcodeExample {
     @Autowired
     private FenixBarcodeService barcodeService;
 
-    public void generateBarcodeImage() {
+    public String generateBarcodeImage() {
         barcodeService.barcodeImg128(
                 "ABC123456789",      // Text to encode
                 "barcode128",        // Base name for the file

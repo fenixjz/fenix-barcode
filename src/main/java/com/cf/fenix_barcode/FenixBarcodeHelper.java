@@ -14,7 +14,7 @@ import java.nio.file.Path;
 
 @Component
 @RequiredArgsConstructor
-class FenixBarcodeHelper {
+public class FenixBarcodeHelper {
 
     private final FenixBarcodeProperties properties;
 
@@ -33,7 +33,7 @@ class FenixBarcodeHelper {
      * @param height    The height of the barcode image in pixels.
      *                  Example: 150.
      */
-    void generateBarcodeImage(String text, BarcodeFormat format, String baseName, int width, int height) {
+    String generateBarcodeImage(String text, BarcodeFormat format, String baseName, int width, int height) {
         try {
             MultiFormatWriter barcodeWriter = new MultiFormatWriter();
             BitMatrix bitMatrix = barcodeWriter.encode(text, format, width, height);
@@ -48,7 +48,7 @@ class FenixBarcodeHelper {
             Path path = FileSystems.getDefault().getPath(targetDirectory, fileName);
 
             MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path);
-            System.out.println("Barcode saved at: " + path);
+            return path.toAbsolutePath().toString();
         } catch (WriterException e) {
             throw new RuntimeException("Error generating barcode: " + e.getMessage());
         } catch (Exception e) {

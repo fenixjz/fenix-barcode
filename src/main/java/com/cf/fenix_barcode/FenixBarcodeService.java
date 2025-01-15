@@ -20,8 +20,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImg128(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.CODE_128, baseName, width, height);
+    public String barcodeImg128(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.CODE_128, baseName, width, height);
     }
 
     public byte[] barcodeBytes128(String text, int width, int height) {
@@ -38,8 +38,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgAztec(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.AZTEC, baseName, width, height);
+    public String barcodeImgAztec(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.AZTEC, baseName, width, height);
     }
 
     public byte[] barcodeBytesAztec(String text, int width, int height) {
@@ -56,8 +56,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgQRCode(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.QR_CODE, baseName, width, height);
+    public String barcodeImgQRCode(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.QR_CODE, baseName, width, height);
     }
 
     public byte[] barcodeBytesQRCode(String text, int width, int height) {
@@ -74,8 +74,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgEan13(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.EAN_13, baseName, width, height);
+    public String barcodeImgEan13(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.EAN_13, baseName, width, height);
     }
 
     public byte[] barcodeBytesEan13(String text, int width, int height) {
@@ -92,8 +92,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgCode39(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.CODE_39, baseName, width, height);
+    public String barcodeImgCode39(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.CODE_39, baseName, width, height);
     }
 
     public byte[] barcodeBytesCode39(String text, int width, int height) {
@@ -110,8 +110,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgItf(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.ITF, baseName, width, height);
+    public String barcodeImgItf(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.ITF, baseName, width, height);
     }
 
     public byte[] barcodeBytesItf(String text, int width, int height) {
@@ -128,8 +128,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgDataMatrix(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.DATA_MATRIX, baseName, width, height);
+    public String barcodeImgDataMatrix(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.DATA_MATRIX, baseName, width, height);
     }
 
     public byte[] barcodeBytesDataMatrix(String text, int width, int height) {
@@ -146,8 +146,8 @@ public class FenixBarcodeService {
      * @param width     The width of the barcode image in pixels.
      * @param height    The height of the barcode image in pixels.
      */
-    public void barcodeImgPdf417(String text, String baseName, int width, int height) {
-        helper.generateBarcodeImage(text, BarcodeFormat.PDF_417, baseName, width, height);
+    public String barcodeImgPdf417(String text, String baseName, int width, int height) {
+        return helper.generateBarcodeImage(text, BarcodeFormat.PDF_417, baseName, width, height);
     }
 
     public byte[] barcodeBytesPdf417(String text, int width, int height) {
