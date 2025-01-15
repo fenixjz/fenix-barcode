@@ -31,7 +31,7 @@ Add the dependency for the Fenix Barcode Library:
 <dependency>
     <groupId>com.github.fenixjz</groupId>
     <artifactId>fenix-barcode</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 
