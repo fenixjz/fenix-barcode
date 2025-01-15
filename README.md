@@ -77,7 +77,7 @@ The library exposes the `FenixBarcodeService` class, which provides public metho
 ### 1. Generating a Barcode Image File
 
 ```java
-import com.cf.fenix_barcode.FenixBarcodeService;
+import org.cf.fenix_barcode.FenixBarcodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -103,7 +103,7 @@ This will generate a barcode in the directory specified by the `fenix.spring.bar
 ### 2. Generating a Barcode as a Byte Array
 
 ```java
-import com.cf.fenix_barcode.FenixBarcodeService;
+import org.cf.fenix_barcode.FenixBarcodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

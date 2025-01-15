@@ -1,4 +1,4 @@
-package com.cf.fenix_barcode;
+package org.cf.fenix_barcode;
 
 import lombok.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;

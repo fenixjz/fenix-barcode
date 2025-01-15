@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.cf.fenix_barcode.FenixBarcodeAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=org.cf.fenix_barcode.FenixBarcodeAutoConfiguration
